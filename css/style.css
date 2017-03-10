@@ -172,19 +172,19 @@ footer {
 
 
 .fot p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: .1em;
 }    
     
   .intro h1 {
     font-family: roboto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 2.5em;
     letter-spacing: .8em;
  
 }  
 #detail_page p {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .back-btn{
     width: 50px;
