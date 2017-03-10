@@ -171,20 +171,27 @@ footer {
 }
 
 
-.intro p {
-    font-size: 1.2em;
+.fot p {
+    font-size: 1.5em;
     line-height: .1em;
 }    
     
   .intro h1 {
     font-family: roboto;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 2.5em;
-    letter-spacing: 1em;
+    letter-spacing: .8em;
  
 }  
+#detail_page p {
+    font-size: 1.5em;
+}
+.back-btn{
+    width: 50px;
+    height: 50px;
 
-  
+    
+}  
     
 }
 
