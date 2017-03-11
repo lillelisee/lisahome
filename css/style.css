@@ -11,14 +11,12 @@ html, body {
 
 body {
     background: #fff ;
-    
 }
 
-#portfolio {
 
+#portfolio {
     margin-top: 30px;
     margin-bottom: 30px;
-    
 }
 
 ul, li {
@@ -30,6 +28,7 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 .back-btn{
     width: 70px;
     height: 70px;
@@ -57,8 +56,6 @@ img {
     clear: both;
 }
 
-.port
-
 #portfolio h4{
     text-align: left;
     text-transform: uppercase;
@@ -68,7 +65,7 @@ img {
 
 .intro h1 {
     font-family: roboto;
-    font-size: 2em;
+    font-size: 2vw;
     letter-spacing: 1em;
     margin-right:-1em;
     
@@ -76,7 +73,7 @@ img {
 }
 
 .intro p {
-    font-size: 2em;
+    font-size: 2vw;
     line-height: 1em;
     margin: 0px;
     font-family: roboto;
@@ -101,9 +98,10 @@ img {
 
 .fot p {
     font-family: roboto;
-    font-size: 2em;
+    font-size: 1.3em;
     letter-spacing: .1em;
     margin-right:-.1em;
+    margin-bottom: 0px;
     
  
 }
@@ -132,11 +130,27 @@ a:hover img{
 
 }
 
-#detail_page p {
-    font-size: 25px;
+#detail_page h2{
+    text-align: ;
+    font-size: 1.3em;
     font-family: roboto;
+        letter-spacing: .1em;
+    margin-right:-.1em;
 }
 
+#detail_page p {
+    font-size: 1em;
+    font-family: roboto;
+    text-align: ;
+    margin: 0px;
+}
+
+#detail_page .om_mig_p p:nth-child(odd) {
+    color: ;
+    font-size: 1em;
+    text-transform:;
+    margin-bottom: 30px;
+}
 
 footer {
     margin-top: 100px;
@@ -184,13 +198,13 @@ footer {
     
   .intro h1 {
     font-family: roboto;
-    font-size: 1.3em;
+    font-size: 3vw;
     line-height: 2.5em;
     letter-spacing: .8em;
  
 }  
 #detail_page p {
-    font-size: 1em;
+
 }
 .back-btn{
     width: 50px;
@@ -202,21 +216,13 @@ footer {
 }
 
 
-@media(min-width:768px){
-
-
-    
-}
-
 
 @media(min-width:992px){
-        
  
-    
 }
 
 @media(min-width:1200px){
-
+ 
 
     
 }
