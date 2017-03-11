@@ -52,7 +52,6 @@ img {
     margin: 30px 0 30px 0;
 }
 .clear_0 {
-
     clear: both;
 }
 
@@ -134,7 +133,7 @@ a:hover img{
     text-align: ;
     font-size: 1.3em;
     font-family: roboto;
-        letter-spacing: .1em;
+    letter-spacing: .1em;
     margin-right:-.1em;
 }
 
