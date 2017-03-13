@@ -1,4 +1,4 @@
-@import url("..//css/bootstrap.min.css");
+@import url("..//css/bootstrap.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /*----------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ a:hover img{
 }
 
 #detail_page p {
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: roboto;
     text-align: ;
     margin: 0px;
@@ -146,7 +146,7 @@ a:hover img{
 
 #detail_page .om_mig_p p:nth-child(odd) {
     color: ;
-    font-size: 1em;
+    font-size: 1.3em;
     text-transform:;
     margin-bottom: 30px;
 }
@@ -203,7 +203,17 @@ footer {
  
 }  
 #detail_page p {
+    font-size: 1.1em;
+    font-family: roboto;
+    text-align: ;
+    margin: 0px;
+}
 
+#detail_page .om_mig_p p:nth-child(odd) {
+    color: ;
+    font-size: 1.1em;
+    text-transform:;
+    margin-bottom: 30px;
 }
 .back-btn{
     width: 50px;
