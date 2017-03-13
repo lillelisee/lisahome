@@ -131,10 +131,12 @@ a:hover img{
 
 #detail_page h2{
     text-align: ;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: roboto;
-    letter-spacing: .1em;
-    margin-right:-.1em;
+    letter-spacing: .2em;
+    margin-right:-.2em;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 #detail_page p {
@@ -142,6 +144,8 @@ a:hover img{
     font-family: roboto;
     text-align: ;
     margin: 0px;
+    text-align: center;
+    
 }
 
 #detail_page .om_mig_p p:nth-child(odd) {
@@ -149,6 +153,7 @@ a:hover img{
     font-size: 1.3em;
     text-transform:;
     margin-bottom: 30px;
+    
 }
 
 footer {
@@ -203,7 +208,7 @@ footer {
  
 }  
 #detail_page p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: roboto;
     text-align: ;
     margin: 0px;
@@ -211,7 +216,7 @@ footer {
 
 #detail_page .om_mig_p p:nth-child(odd) {
     color: ;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-transform:;
     margin-bottom: 30px;
 }
