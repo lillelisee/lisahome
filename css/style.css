@@ -1,5 +1,6 @@
 @import url("..//css/bootstrap.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 /*----------------------------------------------------------------------------------------
 									GENERAL SETTINGS
@@ -14,9 +15,13 @@ body {
 }
 
 
+ /* Start page */
+
+
 #portfolio {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 302x;
+    
 }
 
 ul, li {
@@ -24,9 +29,11 @@ ul, li {
     padding: 0px;
 }
 
-img {
+
+
+ img {
     max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
 }
 
 .back-btn{
@@ -59,44 +66,23 @@ img {
     text-align: left;
     text-transform: uppercase;
     font-size: 2em;
-    font-family: Montserrat; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
-
-.intro h1 {
+h1 {
     font-family: roboto;
     font-size: 2vw;
     letter-spacing: 1em;
-    margin-right:-1em;
-    
- 
-}
+    padding-bottom: 64px !important;
+    margin-top: 128px;
+    text-align: center;
+    text-transform: uppercase;
 
-.intro p {
-    font-size: 2vw;
-    line-height: 1em;
-    margin: 0px;
-    font-family: roboto;
-    
-}
-
-
-.intro {
-    margin-top: 60px;
-    color: #414141;
-}
-
-.intro a {
-    transition: .2s;
-}
-
-.intro a:hover {
-    color: #888888;
 }
 
 
 
 .fot p {
-    font-family: roboto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     letter-spacing: .1em;
     margin-right:-.1em;
@@ -115,45 +101,75 @@ a, a:hover, a:focus {
 a img{
     transition: .0s ease-in-out;
     opacity: 1;
-        border: solid transparent 2px;
-    border-radius: 0px;
-
+    margin-top: 16px !important;
 }
 
+
 a:hover img{
-    
     opacity: 1;
    /* border: solid #000000 2px;*/
-    border-radius: 5px;
     transition: .0s ease-in-out;
 
 }
 
-#detail_page h2{
+
+#detail_page p {
+    font-size: 1.3em;
+    text-align: ;
+    margin: 0px;
+    text-align: left;
+    
+}
+/*----------------------------------------------------------------------------------------
+									About page
+----------------------------------------------------------------------------------------*/
+#about_page h2{
     text-align: ;
     font-size: 1.5em;
-    font-family: roboto;
-    letter-spacing: .2em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
     margin-right:-.2em;
     margin-bottom: 30px;
     text-align: center;
 }
-
-#detail_page p {
-    font-size: 1.3em;
-    font-family: roboto;
-    text-align: ;
+#about_page p{
+    font-size: 1.2em ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center ;
     margin: 0px;
-    text-align: center;
-    
+    color: 1f1f1f;
 }
 
-#detail_page .om_mig_p p:nth-child(odd) {
-    color: ;
-    font-size: 1.3em;
-    text-transform:;
-    margin-bottom: 30px;
-    
+#about_page .artist_statement p{
+    font-size: 1.2em ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #1f1f1f;
+    margin-top: 32px;
+    margin-bottom: 128px;
+
+}
+
+#about_page .artist_statement b{
+    font-family: oswald;
+    font-size: 1em ;
+    letter-spacing: 0.05em;
+    font-weight: extra-bold;
+    color: #1f1f1f;
+}
+
+#about_page .biography p{
+    font-size: 1.2em ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left ;
+    margin-top: 64px;
+    color: #1f1f1f;
+    margin-bottom: 64px;
+}
+
+#about_page .om_mig_p p:nth-child(odd) {;
+    margin-bottom: 32px;
+    text-align: center; 
 }
 
 footer {
@@ -167,11 +183,44 @@ footer {
 /*----------------------------------------------------------------------------------------
 									Featured
 ----------------------------------------------------------------------------------------*/
-.port > div {
-    padding: 15px 15px 15px 15px !important;
-    transition: .1s;
+
+
+/* Flexbox gallery for portfolio */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: cover;
 
 }
+.gallery-item{
+    display: flexbox;
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: 1 1 calc(33.333% - 32px);
+}
+.gallery-item img{
+    max-width: auto;
+    display: flexbox;
+    object-fit: cover;
+    aspect-ratio: 9 / 14;
+
+}
+
+/* Responsive: 1 column on small, 2 columns medium, 3 columns desktop */
+@media (max-width: 599px){
+    .gallery-item{ flex: 1 1 100%; max-width: 100%; margin-left: 16px; margin-right: 16px;}
+    
+}
+@media (min-width: 600px) and (max-width: 899px){
+    .gallery-item{ flex: 1 1 calc(50% - 32px); max-width: calc(50% - 32px); }
+}
+@media (min-width: 900px){
+    .gallery-item{ flex: 1 1 calc(33.333% - 32px); max-width: calc(33.333% - 32px); }
+}
+
+/* Ensure generic img rules don't conflict with gallery sizing */
+img{ max-width:100%; height:auto; }
 
 
 /*----------------------------------------------------------------------------------------
@@ -200,33 +249,40 @@ footer {
 
 }    
     
-  .intro h1 {
-    font-family: roboto;
-    font-size: 1em;
-    line-height: 2.5em;
-    letter-spacing: .8em;
- 
-}  
 #detail_page p {
-    font-size: 1.3em;
-    font-family: roboto;
-    text-align: ;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
     margin: 0px;
 }
 
-#detail_page .om_mig_p p:nth-child(odd) {
-    color: ;
-    font-size: 1.3em;
-    text-transform:;
+#about_page .om_mig_p p:nth-child(odd) {
+    color: black;
     margin-bottom: 30px;
 }
 .back-btn{
     width: 50px;
     height: 50px;
+    position: fixed;
+    displ
 
     
 }  
+h1 {
+    font-family: roboto;
+       font-size: 5cqi;
+    overflow-wrap: break-word;
+    letter-spacing: 4vw;
+    margin-top: 96px;
+    margin-bottom: 32px !important;
+    text-transform: uppercase;
+
+}
+#portfolio {
+    margin-top: 0px !important;
+    margin-bottom: 128px;
     
+} 
 }
 
 
