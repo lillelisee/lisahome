@@ -279,6 +279,11 @@ h1 {
     text-transform: uppercase;
 
 }
+#detail_page h1 {
+    margin-bottom: 64px !important;
+
+}
+
 #portfolio {
     margin-top: 0px !important;
     margin-bottom: 128px;
