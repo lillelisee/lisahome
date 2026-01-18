@@ -1,0 +1,349 @@
+/* ---------------------------- Base ---------------------------- */
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/inter-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+body {
+  
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  letter-spacing: .3em;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+/* ---------------------------- Header ---------------------------- */
+header {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* ---------------------------- Portfolio Gallery ---------------------------- */
+.portfolio {
+  padding: 2rem;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.gallery-item {
+  
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+
+}
+
+.gallery-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #000;
+
+}
+
+.gallery-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 9 / 14;
+  /*transition: transform 0.3s ease;*/
+}
+
+.gallery-item:hover img {
+  /*transform: scale(1.02);*/
+
+
+}
+
+/* ---------------------------- About Page ---------------------------- */
+#about_page h2{
+    font-size: 1.3em !important;
+    letter-spacing: 0.05em;
+    margin-top: 4em;
+    text-align: left;
+    font-weight: 700;
+}
+#about_page p{
+    font-size: 1.2em ;
+    text-align: left ;
+    margin: 0px;
+    color: 1f1f1f;
+}
+
+#about_page .artist_statement p{
+    font-size: 1.2em ;
+    text-align: left;
+    color: #1f1f1f;
+    margin-top: 32px;
+    margin-bottom: 128px;
+
+}
+
+#about_page .artist_statement b{
+    font-size: 1em ;
+    letter-spacing: 0em;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+#about_page .biography p{
+    font-size: 1.2em ;
+    text-align: left ;
+    margin-top: 64px;
+    color: #1f1f1f;
+    margin-bottom: 64px;
+}
+
+#about_page .om_mig_p p:nth-child(odd) {
+    margin-bottom: 32px;
+    text-align: left; 
+}
+
+/* ---------------------------- Gallery Caption ---------------------------- */
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    transparent 100%
+  );
+
+  color: #ffffff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Title + Arrow row */
+.gallery-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-title {
+  margin: 0 0 -.8rem 0;
+  font-weight: 700;
+  font-size: 1.em !important;
+}
+
+.gallery-arrow {
+  font-size: 2rem !important;
+  font-weight: bold;
+  align-items: center;
+  transform: translateY(-0em);
+  
+}
+/* ---------------------------- Intro Project Detail ---------------------------- */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.project-hero {
+  margin-top: 0rem;
+  text-align: left !important;
+}
+
+.intro img {
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+}
+.project-title h1 {
+  font-weight: 700;
+  font-size: 4rem !important;
+  margin: 1rem 0 0rem 0;
+  text-align: left !important;
+  letter-spacing: 0em !important;
+}
+
+.project-materials{
+  font-weight: 700;
+  color: #000000;
+}
+.project-materials::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------- Project Detail ---------------------------- */
+.project-detail {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+/* ---------------------------- Project Gallery ---------------------------- */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-gallery-item {
+  overflow: hidden;
+}
+
+.project-gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: none;
+}
+
+.project-gallery-item:hover img {
+  transform: none;
+}
+
+.project-gallery-item.full-width-item {
+  grid-column: 1 / -1;
+}
+
+/* ---------------------------- Responsive ---------------------------- */
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  .project-gallery-item.full-width-item {
+    grid-column: auto;
+  }
+  header {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: -3rem;
+}
+.gallery-img-wrapper img {
+  transition: none !important;
+}
+
+.gallery-item:hover img {
+  transform: none;
+}
+.project-title h1 {
+  font-weight: 800;
+  font-size: 3rem !important;
+  margin: 1rem 0 0rem 0;
+  text-align: left !important;
+  letter-spacing: 0em !important;
+}
+}
+
+/* ---------------------------- Back Button ---------------------------- */
+.sub-header {
+  display: flex;
+  align-items: center;       /* vertically center everything */
+  justify-content: center;   /* centers the h1 horizontally */
+  position: relative;        /* allows absolute positioning of arrow if needed */
+
+}
+
+/* Arrow on the left */
+.back-arrow {
+  position: absolute;        /* take it out of normal flow */
+  left: 2rem;                /* same as padding */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -20px;
+  text-decoration: none;
+  color: inherit;
+  display: none;
+}
+
+
+
+
+/* ---------------------------- Project Description ---------------------------- */
+.project-description p {
+  max-width: 800px;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
